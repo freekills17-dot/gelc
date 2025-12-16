@@ -1,2 +1,0 @@
-# gelc
-web practice
