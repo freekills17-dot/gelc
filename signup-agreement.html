@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.ELC & LIGHTING - 로그인</title>
+  <title>G.ELC & LIGHTING - 회원가입 약관동의</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,22 +26,22 @@
     <div class="mx-auto w-full max-w-[1440px] px-20 max-[1279px]:px-10 max-[767px]:px-4">
       <div class="h-[100px] flex items-center justify-between gap-6 max-[767px]:h-auto max-[767px]:py-4">
         <div class="flex items-center gap-6 text-sm font-semibold mr-[191px] max-[767px]:hidden">
-            <a href="login.html">로그인</a>
-            <a href="signup-agreement.html">회원가입</a>
+          <a href="login.html" class="hover:text-[var(--main-color)]">로그인</a>
+          <span>회원가입</span>
         </div>
 
         <a href="index.html" class="relative h-16 w-[120px] shrink-0 block">
-            <div class="absolute h-[7px] left-9 top-[49px] w-[73px]">
-              <img alt="lighting" src="icons/lighting.svg" class="w-full h-full" />
+          <div class="absolute h-[7px] left-9 top-[49px] w-[73px]">
+            <img alt="lighting" src="icons/lighting.svg" class="w-full h-full" />
+          </div>
+          <div class="absolute h-6 left-[53px] top-[18px] w-[57px]">
+            <img alt="ELC" src="icons/ELC.svg" class="w-full h-full" />
+          </div>
+          <div class="absolute flex h-[68.235px] items-center justify-center left-[-3px] top-[-3px] w-[54.518px]">
+            <div class="h-[59.813px] relative w-[40.414px]">
+              <img alt="G" src="icons/G.svg" class="w-full h-full" />
             </div>
-            <div class="absolute h-6 left-[53px] top-[18px] w-[57px]">
-              <img alt="ELC" src="icons/ELC.svg" class="w-full h-full" />
-            </div>
-            <div class="absolute flex h-[68.235px] items-center justify-center left-[-3px] top-[-3px] w-[54.518px]">
-              <div class="h-[59.813px] relative w-[40.414px]">
-                <img alt="G" src="icons/G.svg" class="w-full h-full" />
-              </div>
-            </div>
+          </div>
         </a>
 
         <div class="flex items-center justify-end gap-8 max-[767px]:gap-3">
@@ -115,52 +115,136 @@
 
   <!-- Notice Bar -->
   <div class="bg-[var(--main-color)] h-9 flex items-center justify-center overflow-hidden">
-    <p id="bannerText" class="font-bold text-sm text-white transition-opacity duration-500 opacity-100">
+    <p class="font-bold text-sm text-white">
       B2B회원 전제품 할인 혜택
     </p>
   </div>
 
+  <!-- Signup Step / Agreement -->
   <main class="mx-auto w-full max-w-[1440px] px-20 max-[1279px]:px-10 max-[767px]:px-4">
-    <div class="flex justify-center">
-      <section class="w-full max-w-[400px] flex flex-col gap-10 pt-16 pb-24">
-        <h1 class="text-2xl font-semibold text-center">로그인</h1>
+    <section class="w-full flex flex-col items-center pt-16 pb-24">
+      <!-- Title & Step -->
+      <div class="w-full max-w-[600px] flex flex-col items-center gap-8">
+        <h1 class="text-2xl font-semibold text-center">회원가입</h1>
 
-        <div class="flex h-12">
-          <button class="w-1/2 border-b-4 border-black font-semibold text-base text-black">회원 로그인</button>
-          <button class="w-1/2 border-b border-[#b7c4d2] font-normal text-base text-[#6c7a89]">비회원 주문조회</button>
+        <div class="flex items-center gap-6 text-base">
+          <ol class="list-decimal flex items-center gap-2 font-normal">
+            <li class="ms-6 text-black">약관동의</li>
+          </ol>
+          <div class="w-6 h-6 flex items-center justify-center">
+            <img src="icons/icons_arrow_left_gray.svg" alt="" class="w-full h-full" />
+          </div>
+          <ol class="list-decimal flex items-center gap-2 font-normal text-[#b7c4d2]">
+            <li class="ms-6">정보입력</li>
+          </ol>
+          <div class="w-6 h-6 flex items-center justify-center">
+            <img src="icons/icons_arrow_left_gray.svg" alt="" class="w-full h-full" />
+          </div>
+          <ol class="list-decimal flex items-center gap-2 font-normal text-[#b7c4d2]">
+            <li class="ms-6">가입완료</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Agreement Box -->
+      <div class="mt-10 w-full max-w-[600px] flex flex-col gap-10">
+        <!-- All agree -->
+        <div class="flex flex-col gap-2">
+          <label class="flex items-center gap-2 text-base">
+            <input type="checkbox" class="w-5 h-5 border border-[#b7c4d2] rounded" />
+            <span class="font-bold">전체 동의하기</span>
+          </label>
+          <p class="text-sm text-[#6c7a89]">
+            회원가입 이용약관, 개인정보 취급 방침에 모두 동의합니다.
+          </p>
         </div>
 
-        <div class="flex flex-col gap-4">
-          <div class="flex flex-col gap-3">
-            <input type="text" placeholder="아이디 입력" class="w-full h-12 border border-[#b7c4d2] rounded-lg px-4 text-sm placeholder-[#b7c4d2] focus:border-[var(--main-color)] focus:ring-1 focus:ring-[var(--main-color)]/40 outline-none" />
-            <input type="password" placeholder="비밀번호 입력" class="w-full h-12 border border-[#b7c4d2] rounded-lg px-4 text-sm placeholder-[#b7c4d2] focus:border-[var(--main-color)] focus:ring-1 focus:ring-[var(--main-color)]/40 outline-none" />
+        <div class="h-px bg-[#e0e7ef]"></div>
+
+        <div class="flex flex-col gap-8">
+          <!-- Terms 1 -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-5 h-5 border border-[#b7c4d2] rounded" />
+                <div class="flex items-center gap-2 text-base">
+                  <span>회원가입 약관 동의</span>
+                  <span class="text-[#fb2c36]">(필수)</span>
+                </div>
+              </div>
+              <button type="button" class="w-7 h-7 flex items-center justify-center">
+                <img src="icons/icons_arrow_up.svg" alt="" class="w-[28px] h-[28px]" />
+              </button>
+            </div>
+
+            <div class="bg-[#f4f7fa] border border-[#b7c4d2] rounded h-[260px] overflow-y-auto px-4 py-4 text-sm leading-relaxed no-scrollbar">
+              <!-- 약관 본문: Figma 내용 그대로 (필요시 수정 가능) -->
+              <p class="text-black whitespace-pre-line">
+제1조 목 적
+본 이용약관 (이하 ‘약관'이라 합니다)은 G.ELC(이하 ‘회사' 이라 합니다)에서 제공하는 회사의 인터넷 홈페이지(www.GELC.com) 를 이용함에 있어 이용자의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다.
+
+제2조 이용자의 정의
+① “GELC 홈페이지”란 회사가 이용자에게 서비스를 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 구성한 가상의 공간을 의미하며, 회사가 운용하는 웹사이트를 말합니다.
+② “이용자”라 함은 꾸밈 홈페이지에 접속하여 본 약관에 따라 회사가 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+③ “회원”이라 함은 꾸밈 홈페이지에 접속하여 본 약관에 따라 회사에 개인정보를 제공하고 이용약관 및 개인정보취급방침에 동의한 후 회원등록을 한 자로서, 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.
+④ “아이디(ID)”라 함은 “회원”의 식별과 회원의 서비스 이용을 위하여 회원이 정하고 “회사”가 승인한 문자와 숫자의 조합을 말합니다.
+⑤ “비밀번호”라 함은 회원이 부여받은 아이디(ID)와 일치된 회원임을 확인하고, 회원의 개인정보를 보호하기 위하여 회원 자신이 정한 문자 또는 숫자의 조합을 의미합니다.
+
+제3조 회원가입
+① 이용자가 되고자 하는 자는 회사가 정한 가입 양식에 따라 회원정보를 기입하고 "등록하기" 단추를 누르는 방법으로 회원 가입을 신청합니다.
+② 회사는 제1항과 같이 회원으로 가입할 것을 신청한 자가 다음 각 호에 해당하지 않는 한 신청한 자를 회원으로 등록합니다.
+  1. 가입신청자가 본 약관의 각 조항을 위반하여 회원자격을 상실한 적이 있는 경우. 다만 회원자격 상실 후 3년이 경과한 자로서 회사의 회원재가입 승낙을 얻은 경우에는 예외로 합니다.
+  2. 등록 내용에 허위, 기재누락, 오기가 있는 경우
+  3. 기타 회원으로 등록하는 것이 회사의 기술상 현저히 지장이 있다고 판단되는 경우
+③ 회원가입계약의 성립시기는 회사의 승낙이 가입신청자에게 도달한 시점으로 합니다.
+④ 회원은 제1항의 회원정보 기재 내용에 변경이 발생한 경우, 즉시 변경사항을 정정하여 기재하여야 합니다.
+
+제4조(약관의 효력과 개정)
+① 회사는 본 약관의 내용을 회원이 쉽게 알 수 있도록 꾸밈 홈페이지 초기 서비스화면에 게시합니다.
+② 회사는 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련법을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.
+③ 회사는 본 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행 약관과 함께 홈페이지의 초기 화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다.
+④ 회원은 개정된 약관에 대해 거부할 권리가 있습니다. 회원은 개정된 약관에 동의하지 않을 경우 서비스 이용을 중단하고 회원등록을 해지할 수 있습니다.
+⑤ 변경된 약관에 대한 정보를 알지 못해 발생하는 회원 피해는 회사가 책임지지 않습니다.
+
+제5조 회원정보 사용에 대한 동의
+① 회원의 개인정보에 대해서는 회사의 개인정보 취급방침이 적용됩니다.
+… (이하 약관 전문 동일)
+              </p>
+            </div>
           </div>
 
-          <label class="flex items-center gap-2 text-sm text-black">
-            <input type="checkbox" class="w-5 h-5 border border-[#b7c4d2] rounded" />
-            아이디 저장
-          </label>
-
-          <button class="h-12 w-full rounded-lg bg-[var(--main-color)] text-white font-bold text-base">로그인</button>
+          <!-- Terms 2 -->
+          <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" class="w-5 h-5 border border-[#b7c4d2] rounded" />
+              <div class="flex items-center gap-2 text-base">
+                <span>개인정보 취급방침 동의</span>
+                <span class="text-[#fb2c36]">(필수)</span>
+              </div>
+            </div>
+            <button type="button" class="w-7 h-7 flex items-center justify-center">
+              <img src="icons/icons_arrow_up.svg" alt="" class="w-[28px] h-[28px] rotate-180" />
+            </button>
+          </div>
         </div>
 
-        <div class="relative flex items-center justify-center">
-          <span class="absolute left-0 right-0 h-px bg-[#e0e7ef]"></span>
-          <span class="relative bg-white px-3 text-sm text-[#6c7a89]">or</span>
-        </div>
+        <div class="h-px bg-[#e0e7ef] mt-6"></div>
 
-        <div class="flex flex-col items-center gap-4">
-            <a href="signup-agreement.html" class="w-full">  
-                <button class="h-12 w-full rounded-lg border border-[#b7c4d2] text-base text-black">회원가입</button>
-                <button class="text-sm text-[#6f7787]">아이디/비밀번호 찾기</button>
-            </a>
+        <!-- Buttons -->
+        <div class="mt-4 flex gap-3 h-12">
+          <button type="button" onclick="history.back()" class="flex-1 border border-[#b7c4d2] rounded-lg bg-white flex items-center justify-center text-base">
+            취소
+          </button>
+          <button type="button" class="flex-1 rounded-lg bg-[var(--main-color)] text-white font-bold text-base flex items-center justify-center">
+            다음
+          </button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <!-- Floating Buttons -->
-  <div class="fixed right-10 top-[320px] flex flex-col gap-2 z-[60] max-[767px]:right-4">
+  <div class="fixed right-10 top-[420px] flex flex-col gap-2 z-[60] max-[767px]:right-4">
     <div class="relative shadow-[0px_4.333px_6.5px_-4px_rgba(0,0,0,0.1)] w-[52px] h-[52px]">
       <div class="absolute left-0 w-[52px] h-[52px] top-0">
         <img alt="floating button" src="http://localhost:3845/assets/3d065a63c980366564a35c910125e1aa6718b4c6.svg" class="w-full h-full" />
@@ -174,7 +258,7 @@
     </div>
 
     <div class="bg-[var(--main-color)] flex flex-col items-center justify-center pb-[6.5px] rounded-3xl shadow-[0px_4.333px_6.5px_-4px_rgba(0,0,0,0.1)] w-[52px] h-[52px]">
-      <img alt="icon" src="http://localhost:3845/assets/b35afd350d0e37aee602e7fcb51208922ea7be2f.svg" class="w-[26.542px] h-[26.542px]" />
+      <img alt="icon" src="http://localhost:3845/assets/b35afd350d0e37aee6027fcb51208922ea7be2f.svg" class="w-[26.542px] h-[26.542px]" />
       <p class="font-bold text-[13px] text-white">B2B</p>
     </div>
 
@@ -242,4 +326,5 @@
   </footer>
 </body>
 </html>
+
 
