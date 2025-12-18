@@ -65,54 +65,161 @@
     </div>
   </header>
 
-  <!-- Navigation -->
-  <div class="sticky top-0 z-50 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.08)]">
-    <div class="mx-auto w-full max-w-[1440px] px-20 max-[1279px]:px-6 max-[767px]:px-4">
-      <div class="h-16 flex items-center gap-[30px]">
-        <button class="w-8 h-8 flex items-center justify-center">
-          <img src="icons/icons_menu.svg" alt="menu" class="w-8 h-8"/>
-        </button>
+<!-- Navigation -->
+<div class="sticky top-0 z-50 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.08)]">
+  <div class="mx-auto w-full max-w-[1440px] px-20 max-[1279px]:px-6 max-[767px]:px-4">
+    <div class="h-16 flex items-center gap-[30px]">
+      <!-- ✅ 햄버거: 고정 (스크롤 밖) -->
+      <button class="w-8 h-8 flex items-center justify-center shrink-0">
+        <img src="icons/icons_menu.svg" alt="menu" class="w-8 h-8"/>
+      </button>
 
+      <!-- ✅ 메뉴만 스크롤 -->
+      <div
+        id="nav-menu-scroll"
+        class="flex-1 h-16 overflow-x-auto no-scrollbar"
+      >
         <!-- desktop -->
-        <nav class="flex-1 h-16 flex items-center justify-between max-[767px]:hidden">
-          <a href="category-1.html" class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#233346] text-base">펜던트</p></a>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">벽등</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">스탠드</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">로비/샹들리에</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">거실/방/주방</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">직부/센서등</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">실링팬</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">레일/마그네틱</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">라인조명</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">매입등</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">실외/산업조명</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">캠핑용</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">전구</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">스위치/콘센트</p></div>
-          <div class="group flex h-full items-center justify-center px-2.5"><p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346]">기타자재</p></div>
+        <nav
+          class="h-16 flex items-center justify-between flex-nowrap min-w-[1200px] max-[767px]:hidden"
+        >
+          <a href="category-1.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#233346] text-base whitespace-nowrap">펜던트</p>
+          </a>
+
+          <a href="category-2.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">벽등</p>
+          </a>
+
+          <a href="category-3.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">스탠드</p>
+          </a>
+
+          <a href="category-4.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">로비/샹들리에</p>
+          </a>
+
+          <a href="category-5.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">거실/방/주방</p>
+          </a>
+
+          <a href="category-6.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">직부/센서등</p>
+          </a>
+
+          <a href="category-7.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">실링팬</p>
+          </a>
+
+          <a href="category-8.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">레일/마그네틱</p>
+          </a>
+
+          <a href="category-9.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">라인조명</p>
+          </a>
+
+          <a href="category-10.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">매입등</p>
+          </a>
+
+          <a href="category-11.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">실외/산업조명</p>
+          </a>
+
+          <a href="category-12.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">캠핑용</p>
+          </a>
+
+          <a href="category-13.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">전구</p>
+          </a>
+
+          <a href="category-14.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">스위치/콘센트</p>
+          </a>
+
+          <a href="category-15.html" class="group flex h-full items-center justify-center px-2.5 shrink-0">
+            <p class="font-semibold text-[#6c7a89] text-base group-hover:text-[#233346] whitespace-nowrap">기타자재</p>
+          </a>
         </nav>
 
         <!-- mobile -->
-        <nav class="hidden max-[767px]:flex flex-1 gap-4 overflow-x-auto no-scrollbar">
-          <button class="whitespace-nowrap font-semibold text-[#233346]">펜던트</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">벽등</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">스탠드</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">로비/샹들리에</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">거실/방/주방</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">직부/센서등</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">실링팬</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">레일/마그네틱</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">라인조명</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">매입등</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">실외/산업조명</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">캠핑용</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">전구</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">스위치/콘센트</button>
-          <button class="whitespace-nowrap font-semibold text-[#6c7a89]">기타자재</button>
+        <nav class="hidden max-[767px]:flex h-16 items-center gap-4">
+          <button class="whitespace-nowrap font-semibold text-[#233346] shrink-0">펜던트</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">벽등</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">스탠드</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">로비/샹들리에</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">거실/방/주방</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">직부/센서등</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">실링팬</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">레일/마그네틱</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">라인조명</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">매입등</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">실외/산업조명</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">캠핑용</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">전구</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">스위치/콘센트</button>
+          <button class="whitespace-nowrap font-semibold text-[#6c7a89] shrink-0">기타자재</button>
         </nav>
       </div>
     </div>
   </div>
+</div>
+
+<script>
+  const el = document.getElementById('nav-menu-scroll');
+
+  // ✅ PC에서만: 엣지 hover 자동 스크롤
+  const isDesktop = () => window.matchMedia('(min-width: 768px)').matches;
+
+  let raf = null;
+  let dir = 0; // -1 left, +1 right, 0 stop
+  const EDGE = 36;      // 모서리 감지 폭(px)
+  const MAX_SPEED = 14; // 속도(프레임당 px)
+
+  function tick() {
+    if (!dir) { raf = null; return; }
+    // 엣지에 더 가까울수록 가속(부드럽게)
+    el.scrollLeft += dir * MAX_SPEED;
+    raf = requestAnimationFrame(tick);
+  }
+
+  function start() {
+    if (raf) return;
+    raf = requestAnimationFrame(tick);
+  }
+
+  function stop() {
+    dir = 0;
+  }
+
+  el.addEventListener('mousemove', (e) => {
+    if (!isDesktop()) return;
+
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+
+    if (x < EDGE) {
+      dir = -1;
+      start();
+    } else if (x > rect.width - EDGE) {
+      dir = 1;
+      start();
+    } else {
+      stop();
+    }
+  });
+
+  el.addEventListener('mouseleave', stop);
+
+  // ✅ 드래그 방지(PC): 필요하면 아예 텍스트 선택도 막기
+  el.addEventListener('mousedown', (e) => {
+    if (!isDesktop()) return;
+    // 링크 클릭은 허용, 드래그 스크롤만 안 쓰는 거라 preventDefault는 안 걸어둠
+  });
+</script>
+
 
   <!-- Notice Bar -->
   <div class="bg-[var(--main-color)] h-9 flex items-center justify-center overflow-hidden">
@@ -142,22 +249,9 @@
   <div class="absolute inset-0">
     <img
       alt="펜던트 카테고리 배너"
-      src="images/01.펜던트 복사.jpg"
+      src="images/01.펜던트 복사_2.jpg"
       class="w-full h-full object-cover"
     />
-  </div>
-
-  <div class="absolute inset-0 bg-gradient-to-r from-[var(--main-color)]/90 via-[var(--main-color)]/70 to-transparent"></div>
-
-  <div class="relative w-full h-full flex items-center justify-center text-center">
-    <div class="text-[#233346]">
-      <h1 class="text-5xl font-semibold mb-4 max-[1279px]:text-3xl">
-        Pendant
-      </h1>
-      <p class="text-base opacity-100 max-[1279px]:text-sm">
-        공간에 분위기를 걸어두는 포인트 조명
-      </p>
-    </div>
   </div>
 </section>
 
@@ -201,7 +295,7 @@
 
     <!-- Product Grid -->
     <section class="py-12">
-      <div class="grid grid-cols-4 gap-x-6 gap-y-20 max-[1279px]:grid-cols-2 max-[767px]:grid-cols-2">
+      <div class="grid grid-cols-4 gap-x-6 gap-y-20 max-[1279px]:grid-cols-2 max-[767px]:grid-cols-2 max-[767px]:gap-x-4">
         <!-- Product 1 -->
         <article class="flex flex-col gap-4 cursor-pointer group">
           <div class="aspect-square rounded-2xl overflow-hidden relative">
